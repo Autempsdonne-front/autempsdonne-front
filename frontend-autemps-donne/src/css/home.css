@@ -1,0 +1,345 @@
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+    margin-right: 0;
+}
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    background:
+        url('../assets/background.png') no-repeat center top fixed,
+        url('../assets/point1.png') no-repeat top fixed,
+        url('../assets/point2.png') no-repeat bottom fixed;
+
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    filter: drop-shadow(2px 2px 1px rgb(128, 128, 128));
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+.nav a:active {
+    color: white;
+}
+a:hover{
+    color: #D23939;
+}
+.connection-btn {
+    padding: 15px 40px; 
+    background-color: #D23939;
+    color: white;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.connection-btn:hover {
+    background-color: #963b3b;
+    transition: color 0.5s;
+
+}
+.signup-btn a{
+    text-decoration: none;
+    color: white;
+}
+.signup-btn {
+    padding: 25px 50px;
+    background-color: #D23939;
+    color: white;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 3em;
+    text-decoration: none;
+}
+
+.signup-btn:hover {
+    background-color: #963b3b;
+    transition: color 0.5s;
+}
+
+
+.main-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: black;
+    margin: 20px; 
+}
+
+.main-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 84px;
+    color: black;
+    margin: 20px;
+    font-weight: bold; 
+}
+
+.both{
+    margin-top: 100px;
+    margin-left : 100px;
+}
+footer {
+    margin:0px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #D23939;
+    color: white;
+}
+.title_footer{
+    display: flex;
+}
+.p_title {
+    font-family: 'Itim';
+    font-size: 20px;
+    margin-top: 26px;
+}
+.title_list{
+    text-transform: uppercase;
+}
+.menu_footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.menu_footer a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2;
+}
+.menu_footer a:hover{
+    text-decoration: underline;
+}
+.main_menu{
+    display: flex;
+}
+.second_menu{
+    display: flex;
+    padding-left: 130px;
+}
+.banner_footer{
+    display: flex;
+    flex-direction: column;
+}
+.social-icons {
+    display: flex;
+    padding-right: 10px;
+    overflow-x: auto;
+}
+.social-icons a {
+    margin-right: 10px; 
+    text-decoration: none; 
+}
+
+.social-icons img {
+    height: 25px;
+    width: 25px;
+}
+.copyright{
+    color: #CFB3B3 ;
+    font-size: 13px;
+}
+
+.featurette-divider {
+    border: 1px solid #CFB3B3 ;
+    margin: 20px 0;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.image-container .image-overlay {
+    position: relative;
+    margin: 0 30px;
+    overflow: hidden; 
+    border-radius: 25px;
+}
+
+.image-container .image-overlay img {
+    width: 300px; 
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 25px;
+}
+.overlay {
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+.image-container .overlay:hover {
+    opacity: 1; 
+}
+.image-container .overlay img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 30px; 
+}
+
+.image-container .overlay p {
+    color: white;
+    font-size: 16px;
+    margin: 0; 
+}
+
+.image-container .image-overlay:hover img {
+    transform: scale(1.1); 
+}
+.title1{
+    text-align: center;
+    padding:20px;
+}
+
+.tbox {
+    width: 350px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid #C4C4C4;
+    background-color: rgba(196, 196, 196, 0.21); 
+    color: #F96262;
+
+}
+.box{
+    width: 150px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #D23939;
+    background-color: #D23939; 
+    color: white;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.newletter{
+    background-color: #FAFAFA;
+    padding: 40px;
+    padding-left:70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    border-radius: 25px;
+}
+.title_newletter{
+    color:#F96262;
+}
+/* dark mode */
+body.dark-mode {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background:
+        url('../assets/background4.png') no-repeat center top fixed,
+        url('../assets/point2-dark.png') no-repeat top fixed;
+    background-size: cover;
+    background-color: #544D4D;
+}
+button.dark-mode {
+    background-color: #8A80FE;
+    color: black; 
+}
+
+.signup-btn.dark-mode{
+color: black; 
+background-color: #8A80FE; 
+}
+#dark-mode-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; 
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer.dark-mode {
+background-color: #3c1e6e; 
+}
+.overlay.dark-mode {
+    background-color: rgba(138, 128, 254, 0.5); 
+}
+.dark-mode .newletter {
+    background-color: #8A80FE;
+}
+
+.dark-mode .box {
+    background-color: #3c1e6e; 
+    border: 1px solid #3c1e6e;
+
+}
+.dark-mode .title_newletter{
+    color: #3c1e6e;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        max-width: 70px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .connection-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+    .connection-btn {
+        padding: 15px 30px;
+        font-size: 22px;
+    }
+}
